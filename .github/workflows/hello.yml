@@ -1,8 +1,7 @@
-name: Hello
+name: Debug log
 on: push
 jobs:
-  hello:
+  log:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello world"
-      - uses: actions/checkout@v4
+      - run: echo "::debug::This is a debug log"
